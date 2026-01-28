@@ -56,15 +56,12 @@ header {
 }
 
 .logo span { color: var(--primary-blue); }
-
 nav ul {
     display: flex;
     list-style: none;
-    gap: 10px; 
-    overflow-x: auto; 
-    white-space: nowrap;
-    -webkit-overflow-scrolling: touch;
-    padding: 5px 0; 
+    gap: 5px;               
+    flex-wrap: nowrap;      
+    justify-content: flex-end;
 }
 nav {
     display: flex;
@@ -77,11 +74,10 @@ nav ul::-webkit-scrollbar {
 nav a {
     text-decoration: none;
     color: var(--text-gray);
-    font-size: 1rem;
+    font-size: 0.9rem;      /* Perkecil sedikit dari 1rem ke 0.9rem */
     font-weight: 600;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    padding: 8px 16px;
+    white-space: nowrap;    /* TAMBAHKAN INI: Agar teks tidak terpotong ke bawah */
+    padding: 6px 12px;      /* Perkecil padding sedikit */
     border-radius: 12px;
 }
 
@@ -282,12 +278,18 @@ nav a.active {
     .kantin-card-v { min-height: 140px; }
 }
 @media (max-width: 480px) {
-    nav a {
-        font-size: 0.9rem; 
-        padding: 8px 15px; 
+    header {
+        padding: 10px 3%;   /* Beri ruang lebih di sisi kiri-kanan */
     }
     .logo {
-        font-size: 1.1rem; 
-        flex-shrink: 0; 
+        font-size: 0.9rem;  /* Kecilkan teks SMAN15 agar tidak makan tempat */
+        flex-shrink: 1; 
+    }
+    .logo-img {
+        height: 25px;       /* Kecilkan tinggi logo */
+    }
+    nav a {
+        font-size: 0.75rem; /* Ukuran teks menu paling optimal untuk HP */
+        padding: 6px 8px; 
     }
 }
