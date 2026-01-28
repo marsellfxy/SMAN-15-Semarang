@@ -64,9 +64,9 @@ nav ul {
     overflow-x: auto; 
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
+    padding: 5px 0; 
 }
 nav {
-    max-width: 60%; 
     display: flex;
     justify-content: flex-end;
 }
@@ -283,13 +283,11 @@ nav a.active {
 }
 @media (max-width: 480px) {
     nav a {
-        font-size: 0.75rem; /* Teks menu mengecil agar proporsional */
-        padding: 6px 12px;
+        font-size: 0.9rem; /* Ukuran lebih besar agar mudah dibaca */
+        padding: 8px 15px; /* Area klik lebih nyaman untuk jempol */
     }
     .logo {
-        font-size: 0.9rem; /* Nama sekolah mengecil sedikit */
-    }
-    .logo-img {
-        height: 28px; /* Logo gambar ikut mengecil */
+        font-size: 1.1rem; /* Logo jangan terlalu kecil agar tetap terbaca */
+        flex-shrink: 0; /* Mencegah logo gepeng saat menu digeser */
     }
 }
