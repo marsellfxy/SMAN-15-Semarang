@@ -282,27 +282,12 @@ nav a.active {
     .kantin-card-v { min-height: 140px; }
 }
 @media (max-width: 480px) {
-    /* Header lebih lega */
-    header {
-        padding: 15px 4%;
-    }
-    /* Logo tetap besar (1.2rem) */
-    .logo {
-        font-size: 1.2rem; 
-        flex-shrink: 0;
-    }
-    /* Navigasi dipaksa tetap besar dan bisa digeser */
-    nav {
-        flex: 1;
-        margin-left: 10px;
-        overflow: hidden;
-    }
-    nav ul {
-        gap: 12px; /* Jarak antar menu lebih lebar agar mudah diklik */
-    }
     nav a {
-        font-size: 1.1rem; /* UKURAN BESAR: agar tidak seperti tulisan semut */
-        padding: 10px 18px;
-        white-space: nowrap; /* WAJIB: agar tetap sejajar ke samping */
+        font-size: 0.9rem; 
+        padding: 8px 15px; 
+    }
+    .logo {
+        font-size: 1.1rem; 
+        flex-shrink: 0; 
     }
 }
