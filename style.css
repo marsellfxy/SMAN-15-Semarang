@@ -283,11 +283,11 @@ nav a.active {
 }
 @media (max-width: 480px) {
     nav a {
-        font-size: 0.9rem; /* Ukuran lebih besar agar mudah dibaca */
-        padding: 8px 15px; /* Area klik lebih nyaman untuk jempol */
+        font-size: 0.9rem; 
+        padding: 8px 15px; 
     }
     .logo {
-        font-size: 1.1rem; /* Logo jangan terlalu kecil agar tetap terbaca */
-        flex-shrink: 0; /* Mencegah logo gepeng saat menu digeser */
+        font-size: 1.1rem; 
+        flex-shrink: 0; 
     }
 }
