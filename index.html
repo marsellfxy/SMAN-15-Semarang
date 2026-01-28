@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantin SMA N 15 Semarang - Digital</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo" onclick="navigateTo('home-page')">
+            <img src="logosma15.png" alt="Logo" class="logo-img">
+            SMAN15 <span>Semarang</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a id="link-home" class="nav-link active" onclick="navigateTo('home-page')">Home</a></li>
+                <li><a id="link-location" class="nav-link" onclick="navigateTo('location-page')">Location</a></li>
+                <li><a id="link-about" class="nav-link" onclick="navigateTo('about-page')">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="app-wrapper">
+        
+        <main id="home-page" class="page active">
+            <div class="split-container">
+                <section class="left-panel">
+                    <div class="left-panel-content">
+                        <p class="school-name">SMA NEGERI 15 SEMARANG</p>
+                        <h1 class="headline">Pilih Menu Favorite mu di Kantin</h1>
+                    </div>
+                </section>
+
+                <section class="right-panel">
+                    <div class="kantin-card-v" onclick="openMenu('Kantin Cocomadin')">
+                        <div class="img-box"><img src="kantincocomadin.jpg"></div>
+                        <div class="info-box">
+                            <h3>Kantin Cocomadin</h3>
+                            <p>Nikmati Es teh segar, ayam geprek, dan pentol - favorit siswa! </p>
+                        </div>
+                    </div>
+
+                    <div class="kantin-card-v" onclick="openMenu('Kantin Bunga')">
+                        <div class="img-box"><img src="kantinbunga.png"></div>
+                        <div class="info-box">
+                            <h3>Kantin Bunga</h3>
+                            <p> Matcha Oreo bikin ketagihan, ayam kremes kriuk, dan makaroni marsha yang pedasnya bikin nagih!</p>
+                        </div>
+                    </div>
+
+                    <div class="kantin-card-v" onclick="openMenu('Kantin Doremi')">
+                        <div class="img-box"><img src="kantindoremi.jpg"></div>
+                        <div class="info-box">
+                            <h3>Kantin Doremi</h3>
+                            <p>Harmoni rasa! Ayam katsu kriuk, risol sosis mayo lumer, geprek pedas gurih bikin nangis... tapi pengen balik lagi! </p>
+                        </div>
+                    </div>
+
+                    <div class="kantin-card-v" onclick="openMenu('Kantin Mawar')">
+                        <div class="img-box"><img src="kantinmawar.jpg"></div>
+                        <div class="info-box">
+                            <h3>Kantin Mawar</h3>
+                            <p>Nikmati pisang goreng, ayam geprek dan katsu, serta Mie kuah untuk menghangatkan tubuh.</p>
+                        </div>
+                    </div>
+
+                    <div class="kantin-card-v" onclick="openMenu('Kantin Melati')">
+                        <div class="img-box"><img src="kantinmelati.jpg"></div>
+                        <div class="info-box">
+                            <h3>Kantin Melati</h3>
+                            <p>Nyaman saat hujan! Soto ayam hangat, pecel lezat, gorengan kriuk... pasangan sempurna buat hari dingin! </p>
+                        </div>
+                    </div>
+
+                    <div class="kantin-card-v" onclick="openMenu('Kantin Kenangan')">
+                        <div class="img-box"><img src="kantinkenanga.jpg"></div>
+                        <div class="info-box">
+                            <h3>Kantin Kenangan</h3>
+                            <p>Aroma menggoda! Nasi goreng spesial, onigiri selimuti rumput laut, gorengan hangat bikin perut lapar!</p>
+                        </div>
+                    </div>
+
+                    <div class="kantin-card-v" onclick="openMenu('Kantin Anggrek')">
+                        <div class="img-box"><img src="kantinanggrek.jpg"></div>
+                        <div class="info-box">
+                            <h3>Kantin Anggrek</h3>
+                            <p>Cocok untuk bersantai dengan berbagai varian minuman dan makanan yang lezat.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <div id="menu-page" class="page">
+            <div class="centered-content">
+                <div class="content-card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 30px;">
+                        <div>
+                            <h2 id="menuTitle" style="font-size: 2rem; color: var(--navy); font-weight: 800;">Menu Kantin</h2>
+                            <p style="color: var(--text-gray); font-size: 1rem;">Daftar Menu yang Wajib Kalian coba!</p>
+                        </div>
+                        <button class="btn-back" onclick="navigateTo('home-page')">← Back</button>
+                    </div>
+                    <div class="top-3-grid" id="foodContainer"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="location-page" class="page">
+            <div class="centered-content">
+                <div class="content-card" style="text-align: center;">
+                    <h2 style="color: var(--primary-blue); margin-bottom: 20px; font-weight: 800;">Lokasi Kantin Libels</h2>
+                    <div style="width: 100%; height: 450px; border-radius: 30px; overflow: hidden; border: 6px solid #f0f7ff;">
+                        <iframe src="https://maps.google.com/maps?q=SMA%20N%2015%20Semarang&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about-page" class="page">
+            <div class="centered-content">
+                <div class="content-card" style="text-align: center;">
+                    <h2 style="color: var(--navy); margin-bottom: 25px; font-weight: 800;">Tujuan</h2>
+                    <p style="color: var(--text-dark); font-size: 1.1rem; line-height: 2; margin-bottom: 40px;">
+                        Website ini bertujuan untuk menyajikan informasi Top 3 makanan bestseller di kantin sekolah secara jelas dan interaktif, sekaligus membantu siswa dalam memilih makanan yang populer dan direkomendasikan. Selain itu, website ini juga berperan dalam mendukung aspek ekonomi kantin sekolah dengan meningkatkan daya tarik dan minat beli siswa melalui promosi visual yang kreatif dan informatif.
+                    </p>
+                    <div style="padding-top: 30px; border-top: 2px solid #f0f7ff;">
+                        <a href="https://www.instagram.com/sman15smg?igsh=YnN1amZ2ODZzZXVy" target="_blank" class="btn-back" style="text-decoration: none; display: inline-block; background: #E1306C; color: white; border: none;"> Instagram SMAN 15 Semarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
