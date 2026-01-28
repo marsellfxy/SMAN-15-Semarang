@@ -28,8 +28,8 @@ const menuData = {
         { name: 'Gorengan', desc: ' luarnya kriuk, dalamnya lembut, gurihnya bikin gantungan!.', img: 'gorenganmelati.png.jpg' }
     ],
     'Kantin Kenanga': [
-        { name: 'Aneka Gorengan', desc: 'Berbagai macam gorengan untuk camilan.', img: 'gorengankenanga.png.jpg' },
-        { name: 'Onigiri', desc: 'Nasi kepal Jepang berisi tuna & ayam gurih, praktis & lezat.', img: 'onigiri.png.jpg' },
+        { name: 'Aneka Gorengan', desc: 'Berbagai macam gorengan untuk camilan.', img: 'gorengankenanga.jpg' },
+        { name: 'Onigiri', desc: 'Nasi kepal Jepang berisi tuna & ayam gurih, praktis & lezat.', img: 'onigiri.jpg' },
         { name: 'Nasi Goreng', desc: 'Nasi goreng denga telur dan lalapan.', img: 'nasgor.png' }
     ],
     'Kantin Anggrek': [
